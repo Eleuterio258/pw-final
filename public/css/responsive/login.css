@@ -1,0 +1,11 @@
+@media screen and (max-width:1170px) {
+    .content {
+        width: 95%;
+    }
+}
+@media screen and (max-width:500px) {
+    .login-window {
+        width: 95%;
+        min-width: 280px;
+    }
+}

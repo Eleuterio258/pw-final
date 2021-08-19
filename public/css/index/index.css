@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-text-black: #696969;
+    --color-text-gray: #a1a1a1;
+    --color-text-wheat: #f5deb3;
+    --color-button-green: #4CAF50;
+    --color-button-brown: #008a0e;
+    --color-text-red: #eb6948;
+}
+body {
+    min-width: 400px;
+    background: #f7f7f7;
+    position: relative;
+    font-family: 'MuseoModerno', cursive;
+}
+main {
+    width: 95%;
+    max-width: 1366px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.content {
+    width: 1156px;
+    padding: 20px;
+    margin: 100px auto;
+}
+button, input, select, a, textarea {
+    font-family: 'MuseoModerno', cursive;
+}
+footer {
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    background: var(--color-text-black);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+/* Hover Global */
+.button-hover:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+._hover:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

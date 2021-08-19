@@ -1,0 +1,18 @@
+@media screen and (max-width:1250px) {
+    .content {
+        width: 95%;
+    }
+}
+@media screen and (max-width:810px) {
+    .signup-window form {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        gap: none;
+    }
+    .signup-window form input[type=submit] {
+        width: 100%;
+        position: static;
+        border: none;
+    }
+}

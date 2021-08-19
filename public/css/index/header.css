@@ -1,0 +1,103 @@
+header {
+    width: 100%;
+    height: 90px;
+    background: var(--color-button-brown);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+header #title {
+    width: 280px;
+    margin: 0 16px 0 20px;
+}
+header h1 {
+    white-space: nowrap;
+    color: var(--color-text-wheat);
+    font-size: 2.3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+header form {
+    display: flex;
+    width: 680px;
+}
+header input {
+    width: 100%;
+    padding: 10px;
+    color: var(--color-text-black);
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+header form button {
+    width: 50px;
+    border: none;
+    margin: 0 40px 0 -5px;
+    background: white url('../../assets/lupa.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header p, a {
+    text-decoration: none;
+    color: var(--color-text-wheat);
+}
+/* Buttons */
+.links-content {
+    display: flex;
+    flex-direction: row;
+}
+.container-links {
+    margin: 0 8px;
+}
+#cart-content {
+    position: relative;
+}
+#favorite-content {
+    position: relative;
+}
+.circle-qdt {
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+    text-align: center;
+    background-color: var(--color-button-green);
+    border-radius: 50%;
+    color: white;
+}
+#favorite-items, #cart-items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#user-content {
+    width: 50px;
+    text-align: center;
+}
+#user-content p {
+    line-height: 0px;
+}
+@media screen and (max-width:810px) {
+    header #title {
+        width: 100px;
+    }
+    header h1 {
+        white-space: pre-line;
+        font-size: 1.8em;
+        line-height: 30px;
+    }
+    .links-content {
+        padding: 10px;
+        background-color: var(--color-button-brown);
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+        left: 0%;
+        right: 0%;
+    }
+    footer {
+        height: 150px;
+    }
+}

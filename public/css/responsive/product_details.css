@@ -1,0 +1,30 @@
+@media screen and (max-width:1180px) {
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    main {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    #product-details {
+        max-width: 400px;
+    }
+    #product-details ul {
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #product-details button.add-to-cart {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+    }
+}

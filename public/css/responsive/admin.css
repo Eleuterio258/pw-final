@@ -1,0 +1,13 @@
+@media screen and (max-width:1390px) {
+    main {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@media screen and (max-width:810px) {
+    .content form div#form-content {
+        grid-template-columns: none;
+    }
+}

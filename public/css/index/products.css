@@ -1,0 +1,77 @@
+main ul {
+    padding: 0;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main ul li {
+    position: relative;
+}
+main ul li a div.product-content {
+    width: 360px;
+    height: 110px;
+    margin: 6px; 
+    padding: 10px 20px;
+    background-color: white;
+}
+main ul li button.add-to-cart {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding: 5px;
+    background-color: var(--color-button-green);
+    color: white;
+    border: none;
+    outline: none;
+    transition: 5ms;
+}
+main ul li a {
+    text-decoration: none;
+}
+main ul li h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-text-black);
+}
+main ul li span {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    color: var(--color-text-red);
+}
+main ul li img {
+    float: left; 
+    margin-right:22px;
+}
+
+/* Button favorite product */
+.button-heart {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    text-align: center;
+    background: url("../../assets/coracao-product1.svg") no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    transform-origin: center;
+    outline: none;
+}
+.button-heart:hover {
+    background: url("../../assets/coracao-product2.svg") no-repeat;
+    background-size: contain;
+}
+.favorited {
+    background: url("../../assets/coracao-product2.svg") no-repeat;
+    background-size: contain;
+}
+main h1 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-button-green);
+    color: white;
+    text-align:center;
+}

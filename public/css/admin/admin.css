@@ -1,0 +1,35 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .content ul {
+    list-style: none;
+    padding: 0;
+}
+main .content ul li {
+    display: inline-block;
+}
+main ul li a .content-btn {
+    width: 360px;
+    margin: 6px; 
+    padding: 10px 20px;
+    background-color: white;
+    text-align: center;
+}
+main ul li a {
+    text-decoration: none;
+}
+main ul li h2 {
+    margin: 8px 0;
+    line-height: 18px;
+    color: var(--color-text-black);
+    text-align: center;
+    line-height: 30px;
+}
+main img {
+    margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+/* Estilos globais da página de configurações  */
+.content {
+    max-width: 1300px;
+    min-height: 100vh;
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+}
+.content h2 {
+    margin-bottom: 0px;
+}
+.content p {
+    margin-bottom: 16px;
+    color: var(--color-text-gray);
+}

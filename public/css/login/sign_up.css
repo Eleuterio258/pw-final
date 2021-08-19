@@ -1,0 +1,38 @@
+.content .signup-window h2 {
+    display: block;
+}
+.content .signup-window p {
+    margin-bottom: 20px;
+    color: var(--color-text-gray);
+}
+.content span {
+    color: red;
+}
+.signup-window {
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.signup-window form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.signup-window form input, select {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+.signup-window form input[type=submit] {
+    width: 150px;
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    border: none;
+    background: var(--color-button-green);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,23 @@
+@media screen and (max-width:1170px) {
+    .content {
+        width: 60rem;
+        margin: 100px auto;
+    }
+    main ul {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.8rem;
+    }
+    main ul li a div.product-content {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .content {
+        width: 95%;
+        max-width: 500px;
+        min-width: 400px;
+    }
+    main ul {
+        grid-template-columns: 1fr;
+    }
+}

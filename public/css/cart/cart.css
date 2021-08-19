@@ -1,0 +1,68 @@
+main h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: var(--color-button-green);
+
+}
+.product-details {
+    width: 100%;
+    min-height: 110px;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    align-items: center;
+}
+.item1, .item2, .item3{
+    width: 100%;
+}
+.item3 {
+    text-align: end;
+}
+#total-value {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    background-color: var(--color-text-red);
+    color: white;
+    text-align: center;
+}
+div#checkout {
+    width: 100%;
+    height: 60px;
+    margin: 24px auto;    
+}
+div#checkout div span {
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+    float: left;
+}
+div#checkout form input {
+    width: 200px;
+    float: right;
+}
+div#checkout form input, span #keep-buying {
+    padding: 10px 20px;
+    background-color: var(--color-button-green);
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+/* Delete produto */
+.fade-delete {
+    animation: fadeout 400ms;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}

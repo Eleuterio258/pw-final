@@ -1,0 +1,175 @@
+.content {
+    width: 100%;
+}
+/* Pesquisa de produto */
+.search-container {
+    width: 450px;
+    display: flex;
+    align-content: baseline;
+}
+.search-container input[type="search"] {
+    border-right-style: none;
+}
+.search-container button { 
+    margin-bottom: 10px;
+    width: 60px;
+    border-left-style: none;
+    background: white url(../../assets/lupa.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    outline: none;
+}
+
+/* Tabela de produtos 'Search result' */
+#table-container {
+    overflow: auto;
+    max-height: 500px;
+}
+#table-container table {
+    width: 100%;
+    margin-top: 20px;
+}
+#table-container table th {
+    background-color: var(--color-button-green);
+    color: white;
+    position: sticky;
+    top: -1px;
+}
+#table-container table, tr, td {
+    border: 1px solid #bebebe;
+    border-collapse: collapse;
+}
+#table-container table tr, th, td {
+    white-space: nowrap; 
+    padding: 8px;
+    max-width: 200px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#table-container table tr {
+    cursor: pointer;
+}
+#table-container table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+#table-container table tr:hover {
+    background: #f5deb3;
+}
+
+/* Formulario de alteração de produto */
+.content {
+    position: relative;
+}
+.content form div#form-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.header_content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.content form div.inputs-content {
+    width: 100%;
+}
+.content form input, 
+label.up-label, 
+textarea, 
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+label.up-label {
+    display: block;
+    margin-top: 25px;
+}
+.content #delete {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background:var(--color-text-red);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+span {
+    color: red;
+}
+label.up-label {
+    border: 1px solid var(--color-button-green);
+    cursor: pointer;
+    background-color: var(--color-button-green);
+    color: white;
+    transition: 0.3s ease-out;
+}
+label.up-label:hover {
+    border: 1px solid #666;
+    background-color: white;
+    color: black;
+}
+#preview1 {
+    height: 255px;
+}
+#preview2 {
+    height: 155px;
+}
+
+#imagePreview1 {
+    max-width: 255px;
+}
+#imagePreview2 {
+    max-width: 155px;
+}
+.image-preview {
+    height: 255px;
+    border-top: 2px dotted #999;
+    border-right: 2px dotted #999;
+    border-left: 2px dotted #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+span.image-preview__default-text {
+    color: #999;
+}
+strong {
+    font-size: 12px;
+}
+h5.img-name {
+    background: #999;
+    color: white;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    font-family: Arial;
+}
+.content form input[type=submit] {
+    display: block;
+    padding: 10px;
+    background: var(--color-button-green);
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
